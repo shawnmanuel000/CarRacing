@@ -1,0 +1,6 @@
+/home/test/Dropbox/Work/Stanford/Stanford_Units_Y2_T2/CS248/Project/Code/deps/xtensor/CMakeFiles/install/strip.dir
+/home/test/Dropbox/Work/Stanford/Stanford_Units_Y2_T2/CS248/Project/Code/deps/xtensor/CMakeFiles/install/local.dir
+/home/test/Dropbox/Work/Stanford/Stanford_Units_Y2_T2/CS248/Project/Code/deps/xtensor/CMakeFiles/install.dir
+/home/test/Dropbox/Work/Stanford/Stanford_Units_Y2_T2/CS248/Project/Code/deps/xtensor/CMakeFiles/list_install_components.dir
+/home/test/Dropbox/Work/Stanford/Stanford_Units_Y2_T2/CS248/Project/Code/deps/xtensor/CMakeFiles/rebuild_cache.dir
+/home/test/Dropbox/Work/Stanford/Stanford_Units_Y2_T2/CS248/Project/Code/deps/xtensor/CMakeFiles/edit_cache.dir
