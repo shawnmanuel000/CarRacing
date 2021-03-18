@@ -3,11 +3,13 @@
 static std::string get_track_file(const std::string& track_name)
 {
 	std::string filepath = join(parent(__FILE__), {"spec","tracks",track_name+".csv"});
+	return filepath;
 }
 
 static std::string get_map_file(const std::string& track_name)
 {
 	std::string filepath = join(parent(__FILE__), {"spec","point_maps",track_name+".npz"});
+	return filepath;
 }
 
 static xt::xarray<float> load_track(const std::string& track_name, int stride)

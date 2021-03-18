@@ -4,11 +4,13 @@
 static std::string get_ref_file(const std::string& ref_name)
 {
 	std::string filepath = join(parent(__FILE__), {"spec","refs",ref_name+".csv"});
+	return filepath;
 }
 
 static std::string get_map_file(const std::string& ref_name)
 {
 	std::string filepath = join(parent(__FILE__), {"spec","point_maps",ref_name+"_ref.npz"});
+	return filepath;
 }
 
 static std::pair<std::map<std::string,size_t>,xt::xarray<float>> load_ref(const std::string& ref_name)
@@ -20,8 +22,7 @@ static std::pair<std::map<std::string,size_t>,xt::xarray<float>> load_ref(const 
 
 RefDriver::RefDriver(const std::string& track_name, float dt)
 {
-	std::map<std::string,std::string>::iterator finder = refs.find(track_name);
-	this->ref_name = finder != refs.end() ? finder->second : track_name;
+	this->ref_name = track_name;
 	std::pair<std::map<std::string,size_t>,xt::xarray<float>> df = load_ref(this->ref_name);
 	this->ref_fields = df.first;
 	this->ref = df.second;
